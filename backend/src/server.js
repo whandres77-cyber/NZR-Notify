@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: '2mb' }));
 
-app.get('/health', (req, res) => res.json({ ok: true, service: 'NZR Notify API' }));
+app.get('/health', (req, res) => res.json({ ok: true, service: 'Noty Group API' }));
 
 app.get('/api/organizations', async (req, res) => {
   const { rows } = await pool.query('SELECT * FROM organizations ORDER BY id');
@@ -93,4 +93,4 @@ app.get('/api/organizations/:orgId/stats', async (req, res) => {
 await initDb();
 startScheduler();
 const port = Number(process.env.PORT || 8080);
-app.listen(port, () => console.log(`NZR Notify API em http://localhost:${port}`));
+app.listen(port, () => console.log(`Noty Group API em http://localhost:${port}`));
