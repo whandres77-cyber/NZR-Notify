@@ -32,7 +32,7 @@ Cada cliente possui:
 
 ## 6. Evolução
 - Assinaturas e planos
-- Super Admin NZR
+- Super Admin Noty Group
 - Métricas por organização
 - Cloud Storage para banners
 - OAuth da Meta
