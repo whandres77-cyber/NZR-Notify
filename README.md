@@ -1,4 +1,4 @@
-# NZR Notify — V1 Premium
+# Noty Group — V1 Premium
 
 Central multi-igrejas / multiempresas com WhatsApp como canal principal.
 
