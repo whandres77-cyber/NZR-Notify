@@ -34,7 +34,7 @@ jobs:
           permission = '<uses-permission android:name="android.permission.INTERNET"/>'
           if permission not in s:
               s = s.replace('<manifest xmlns:android="http://schemas.android.com/apk/res/android">', '<manifest xmlns:android="http://schemas.android.com/apk/res/android">\n    ' + permission)
-          s = s.replace('android:label="nzr_notify"', 'android:label="NZR Notify"')
+          s = s.replace('android:label="nzr_notify"', 'android:label="Noty Group"')
           p.write_text(s)
           PY
 
@@ -58,5 +58,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: NZR-Notify-Android
+          name: Noty-Group-Android
           path: mobile/build/app/outputs/flutter-apk/app-release.apk
