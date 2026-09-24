@@ -119,7 +119,7 @@ class _NzrNotifyAppState extends State<NzrNotifyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'NZR Notify',
+      title: 'Noty Group',
       themeMode: mode,
       theme: theme(Brightness.light),
       darkTheme: theme(Brightness.dark),
@@ -272,7 +272,7 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final name = (org['name'] ?? 'NZR Notify').toString();
+    final name = (org['name'] ?? 'Noty Group').toString();
     final logo = (org['logo_url'] ?? '').toString();
 
     return Padding(
@@ -675,7 +675,7 @@ class _WelcomeHero extends StatelessWidget {
                         color: Colors.white, size: 16),
                     SizedBox(width: 6),
                     Text(
-                      'NZR Notify',
+                      'Noty Group',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w700,
@@ -2354,7 +2354,7 @@ class _PremiumLoadingScreenState extends State<_PremiumLoadingScreen>
                   ),
                   const SizedBox(height: 18),
                   const Text(
-                    'NZR Notify',
+                    'Noty Group',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900),
                   ),
                   const SizedBox(height: 5),
